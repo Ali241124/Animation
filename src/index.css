@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply min-h-screen bg-gradient-to-br from-pink-50 via-pink-100 to-purple-50;
+    font-family: 'DM Sans', sans-serif;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-xl border border-white/50;
+  }
+  
+  .glass-dark {
+    @apply bg-white/40 backdrop-blur-lg border border-white/30;
+  }
+  
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.8);
+  }
+  
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(255, 255, 255, 0.9);
+  }
+}
